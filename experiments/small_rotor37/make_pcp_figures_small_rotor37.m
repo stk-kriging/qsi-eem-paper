@@ -6,6 +6,9 @@
 % the simulator and on the final GPs, rebuilt from the outputs of
 % run_small_rotor37.
 
+% requires the proprietary ROTOR37 code (see test_cases/rotor37/code)
+rotor37_check_available ();
+
 close all;
 fprintf ('ROTOR37 parallel-coordinate plots\n');
 
