@@ -23,7 +23,7 @@ variations = { ...
     'rho',            [0.15, 0.35, 0.5] ; ...  % width of the SMC levels
     'size_stop_test', [100, 300, 500]   ; ...  % test set of the stopping criterion
     'stop',           [0.05, 0.1, 0.15] ; ...  % tolerance (stop and stop_final)
-    'kappa',          [0.05, 0.1, 0.2]  ; ...  % relaxation of the safe estimator
+    'kappa',          [1.05, 1.1, 1.2]  ; ...  % relaxation of the safe estimator
     'MH_steps',       [10, 25, 50]      ; ...  % quality of the particle moves
     'MH_accept',      [0.2, 0.35, 0.5]  ; ...  % target acceptance rate of the walk
     'pts_x',          [125, 250, 500]   };     % number of particles
@@ -37,7 +37,7 @@ if debug_mode
     % blocks keep a baseline
     variations = { ...
         'rho',            [0.15, 0.35, 0.5] ; ...
-        'kappa',          [0.05, 0.1, 0.2]  };
+        'kappa',          [1.05, 1.1, 1.2]  };
 end
 
 delete (gcp ('nocreate'));

@@ -28,7 +28,7 @@
 function beta_act = calibrate_kappa (Model, dt, dn, zn, const, config, prm, mu_n, var_n)
 
     % no relaxation requested
-    if config.kappa <= 0
+    if config.kappa <= 1
         beta_act = 1/2;
         return
     end
@@ -60,10 +60,10 @@ function beta_act = calibrate_kappa (Model, dt, dn, zn, const, config, prm, mu_n
     if (beta_act/(1/2) < 1.0001) || (beta_act > 0.9999)
         beta_act = 1/2;
         is_valid = 1;
-    elseif mean(estim_safe)/mean(estim) >= 1 + config.kappa + 0.025
+    elseif mean(estim_safe)/mean(estim) >= config.kappa + 0.025
         beta_1 = beta_act;
         beta_act = (beta_0+beta_act)/2;
-    elseif mean(estim_safe)/mean(estim) <= 1 + config.kappa - 0.025
+    elseif mean(estim_safe)/mean(estim) <= config.kappa - 0.025
         beta_0 = beta_act;
         beta_act = (beta_1+beta_act)/2;
 

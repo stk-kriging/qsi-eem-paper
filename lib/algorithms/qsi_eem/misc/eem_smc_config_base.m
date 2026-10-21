@@ -55,7 +55,7 @@ config.sigma_init = diff (double (prm.BOXx)) / sqrt (12);
 config.qmc_size = 1024; % number of QMC points used by modif_mu when the tensor grid is too large
 
 config.rho = 0.35; % target proportion of particles in each new constraint set
-config.kappa = 0.1; % target relaxation of the safe estimator: safe/plain ratio close to 1+kappa
+config.kappa = 1.1; % target relaxation of the safe estimator: safe/plain ratio close to kappa (kappa <= 1: no relaxation)
 
 config.pts_x_deter = 1000 ; % number of points sampled in X, before importance sampling
 config.pts_s_deter = 2^9;
