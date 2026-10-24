@@ -251,7 +251,7 @@ one behind it.
 
 The ROTOR37 test case used in the "Application to ROTOR37" section of
 the article relies on metamodels provided by Safran Tech, which are
-proprietary and not publicly available at the moment. Only the
+proprietary and not publicly available. Only the
 definition of the QSI problem is provided, in
 [`test_cases/rotor37`](./test_cases/rotor37); it can be used together
 with the proprietary code if it is available to you.

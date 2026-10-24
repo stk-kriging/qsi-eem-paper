@@ -66,7 +66,7 @@ three uncertain variables, rescaled as (10000 − Trid(u)) / 1000.
 ROTOR37 transonic compressor (Safran Tech), 13 design and 5 uncertain
 variables, two constrained outputs (mass flow and pressure ratio,
 expressed as relative deviations from their baselines, tolerance 0.18).
-The metamodels are proprietary and not publicly available at the
-moment: only the definition of the QSI problem is provided. If it is
+The metamodels are proprietary and not publicly available: only the
+definition of the QSI problem is provided. If it is
 available to you, the proprietary code must be placed in
 [`rotor37/code`](./rotor37/code).

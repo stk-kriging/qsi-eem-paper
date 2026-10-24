@@ -2,7 +2,7 @@
 
 The code of the ROTOR37 test case (Gaussian process metamodels of the
 ROTOR37 compressor, and the corresponding evaluation functions) is
-proprietary to Safran and is not publicly available at the moment.
+proprietary to Safran and is not publicly available.
 
 The files located in the parent directory (`rotor37_struct.m`,
 `rotor37_config.m`, `rotor37_s_trnsf.m`) define the QSI problem used
